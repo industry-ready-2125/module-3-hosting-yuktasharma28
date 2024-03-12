@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://www.creativefabrica.com/wp-content/uploads/2023/01/05/Moon-over-Forest-Mountain-at-Night-Graphics-56362115-1-580x387.jpg'); /* Replace with the actual path to your image */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            max-width: 400px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px; /* Increased padding */
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px; /* Rounded corners */
+            font-size: 16px; /* Increased font size */
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 15px; /* Increased padding */
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: purple;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 14px;
+            margin-right: 10px;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form name="loginForm" onsubmit="return validateLoginForm()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Login">
+
+        <br>
+        <center>
+
+        <a href="forgot_password.html" target="rightFrame">Forgot Password</a>
+        <a href="registration.html" target="rightFrame">Sign Up</a></center>
+    </form>
+</body>
+</html>
